@@ -31,7 +31,10 @@ defmodule Terraform.Mixfile do
   end
 
   defp deps do
-    [{:ex_doc, github: "elixir-lang/ex_doc", only: :dev},
-     {:phoenix, "~> 1.2.0"}]
+    [
+      {:ex_doc, github: "elixir-lang/ex_doc", only: :dev},
+      {:phoenix, "~> 1.2.0"},
+      {:credo, "~> 0.4", only: [:dev, :test]}
+    ]
   end
 end
